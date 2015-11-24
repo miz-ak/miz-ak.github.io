@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+body{
+  margin:20px;
+  background-image:url("../images/bg.png");
+  font-family: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
+  color:#043c78;
+}
+
+main{
+  text-align: center;
+}
+
+h1{
+  color:#acbd98;
+  font-family: 'Caveat Brush', cursive;
+  font-size: 46px;
+  padding-top: 40px;
+}
+
+h2{
+    font-family: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
+    margin-bottom: 15px;
+}
+
+a{
+  color: #04783c;
+}
+
+a:hover, a:active{
+  color: #acbd98;
+}
+
+.navi ul{
+  list-style-type: none;
+    /* 表示位置を固定 */
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    /* 表示順序 他のコンテンツが重ならないようにする */
+    z-index: 9999;
+    padding-left:0;
+    border-top:1px solid #043c78;
+    border-bottom:1px solid #043c78;
+    background-image:url("../images/bg.png");
+}
+
+#pagetop-move{
+      /* 表示位置を固定 */
+    position: fixed;
+    bottom: 0px;
+    right: 20px;
+    /* 表示順序 他のコンテンツが重ならないようにする */
+    z-index: 9999;
+}
+
+.navi ul li{
+  display: inline-block;
+  width:90px;
+  padding-top:10px;
+  padding-bottom: 10px;
+  border-left:1px solid #043c78;
+  text-align: center;
+
+}
+
+.navi ul li a{
+    color:#043c78;
+}
+
+img{
+  width: 100%;
+}
+
+.container{
+  text-align: center;
+}
+
+.box{
+  position: relative;
+  font-size: 20px;
+  display: block;
+  padding-top: 50%;
+}
+
+.cover1{
+  position: relative;
+}
+
+.cover2{
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
+}
+
+
+.cover2:hover{
+  opacity: 1;
+}
+
+#skill img{
+  width: 120px;
+  margin-bottom: 50px;
+}
+
+.arrow{
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.arrow img{
+  width: 50px;
+}
+
+.cap{
+    margin-top: 10px;
+}
+
+.links{
+  height: 120px;
+}
+
+.links img{
+  width: 100px;
+  float: left;
+  margin: 10px 10px 20px 10px;
+}
+
+.links .cap{
+  text-align: left;
+  padding-top: 20px;
+}
+
+#contact a{
+  display: inline-block;
+  margin:20px 10px 50px 10px;
+}
+
+#contact a:hover{
+  text-decoration: none;
+  border-bottom:solid #04783c 1px;
+}
+
+#contact img{
+  width: 30px;
+}
