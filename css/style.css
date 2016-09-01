@@ -149,3 +149,11 @@ img{
 #contact img{
   width: 30px;
 }
+
+@media screen and (max-width: 768px) {
+  .navi ul li{
+  display: inline-block;
+  width:77px;
+  font-size: 10px;
+}
+  }

@@ -73,15 +73,23 @@
     <h2>つくったもの</h2>
     <div class="row">
     <div class="col-sm-4">
-      <img src="images/samplesite1.jpg" alt="過去制作サイト画像">
-      <div class="cap">XHTML+CSS2<br>邦楽アーティストのファンサイト<br>活動情報などの文字情報が中心</div>
+      <a href="http://135room.thyme.jp/" target ="_blank"><img src="images/samplesite1.png" alt="過去制作サイト画像"></a>
+      <div class="cap">HTML5+CSS3<br>邦楽アーティストのファンサイト<br>活動情報などの文字情報が中心</div>
     </div>
     <div class="col-sm-4">
       <a href="garden/index.html" target ="_blank"><img src="images/samplesite2.jpg" alt="過去制作サイト"></a>
-      <div class="cap">HTML5+CSS3+Wordpress<br>ibcの課題として制作</div>
+      <div class="cap">HTML5+CSS3+Wordpress<br>ibcの課題として制作<br>上画像からのリンク先はHTML版です</div>
     </div>
     <div class="col-sm-4">
       <div class="links">
+        <a class="m-panel" href="images/music-panel1.jpg" title="演奏会用パネル「祭」" rel="m-panel"><img src="images/thumbnails/music-panel1.jpg" alt="演奏会用パネル「祭」"></a>
+        <a class="m-panel" href="images/music-panel2.jpg" title="演奏会用パネル「栄光の架け橋」" rel="m-panel" style="display: none;"><img src="images/thumbnails/music-panel2.jpg" alt="演奏会用パネル「栄光の架け橋」"></a>
+        <a class="m-panel" href="images/music-panel3.jpg" title="演奏会用パネル「前向きスクリーム」" rel="m-panel" style="display: none;"><img src="images/thumbnails/music-panel1.jpg" alt="演奏会用パネル「前向きスクリーム」"></a>
+        <a class="m-panel" href="images/music-panel4.jpg" title="演奏会用パネル「365日の紙飛行機」" rel="m-panel" style="display: none;"><img src="images/thumbnails/music-panel4.jpg" alt="演奏会用パネル「365日の紙飛行機」"></a>
+        <a class="m-panel" href="images/music-panel5.jpg" title="演奏会用パネル「風が吹いている」" rel="m-panel" style="display: none;"><img src="images/thumbnails/music-panel5.jpg" alt="演奏会用パネル「風が吹いている」"></a>
+        <div class="cap">地域の吹奏楽演奏会で曲目を表すために使用するパネルのイラストを制作</div>
+      </div>
+       <div class="links">
         <a class="brassfes" href="images/brassfes-c.png" title="上三川吹奏楽フェスティバルfacebookページカバー" rel="brassfes"><img src="images/thumbnails/brassfes-c.jpg" alt="上三川吹奏楽フェスティバルfacebookページカバー"></a>
         <a class="brassfes" href="images/brassfes-s.png" title="上三川吹奏楽フェスティバルfacebookページアイコン" rel="brassfes" style="display: none;"><img src="images/thumbnails/brassfes-s.png" alt="上三川吹奏楽フェスティバルfacebookページアイコン"></a>
         <a class="brassfes" href="images/brassfes2-c.jpg" title="第２回上三川吹奏楽フェスティバルfacebookページカバー" rel="brassfes" style="display: none;"><img src="images/thumbnails/brassfes2-c.jpg" alt="第２回上三川吹奏楽フェスティバルfacebookページカバー"></a>
@@ -137,7 +145,7 @@ $(function(){
         //Examples of how to assign the Colorbox event to elements
         $(".brassfes").colorbox({rel:'brassfes', transition:"true", width:"75%", height:"75%"});
         $(".namecard").colorbox({rel:'namecard', transition:"true", width:"75%", height:"75%"});
-        
+        $(".m-panel").colorbox({rel:'m-panel', transition:"true", width:"75%", height:"75%"});
         //Example of preserving a JavaScript event for inline calls.
         $("#click").click(function(){ 
           $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
